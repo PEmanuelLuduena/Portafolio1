@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page Básica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #009688;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .servicios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .servicio {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 250px;
+    }
+
+    footer {
+      background-color: #009688;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .contacto a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #00796b;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .servicios {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenid@ a Mi Landing Page</h1>
+    <p>Un diseño simple, elegante y responsive</p>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <p>Esta es una landing page de ejemplo. Ideal para mostrar tu producto o servicio de forma clara y directa.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicios">
+      <div class="servicio">
+        <h3>Diseño Web</h3>
+        <p>Landing Pages, sitios personales y catálogos para tu emprendimiento.</p>
+      </div>
+      <div class="servicio">
+        <h3>Optimización</h3>
+        <p>Mejoramos la velocidad, diseño responsive y experiencia de usuario.</p>
+      </div>
+      <div class="servicio">
+        <h3>Soporte</h3>
+        <p>Asistencia técnica y mantenimiento mensual de tu web.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Elegí tu forma preferida para contactarme:</p>
+    <div class="contacto">
+      <a href="https://www.linkedin.com/me?trk=p_mwlite_me_notifications-secondary_nav" target="_blank">Contactar por LinkedIn</a>
+      <a href="https://wa.me/XXXXXXXXXXX" target="_blank">Contactar por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - TuNombre. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
